@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
 const ListItem = (props) => {
   const { eventName, description, venue, price, discount } = props;
   const classes = useStyles();
-  const [open, setOpen] = React.useState(true);
+  const [open, setOpen] = React.useState(false);
 
   const handleClick = () => {
     setOpen(!open);
