@@ -1,0 +1,4 @@
+export const SAVE_EVENT_TRIGGER = "EVENT/SAVE/TRIGGER";
+export const SAVE_EVENT = "EVENT/SAVE";
+
+export const GET_EVENTS_TRIGGER = "EVENT/GET/TRIGGER";
