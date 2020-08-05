@@ -48,7 +48,7 @@ const Events = () => {
       case filterType.FREE:
         return eventsList.filter((obj) => obj.discount === obj.price);
       case filterType.NO_DISCOUNT:
-        return eventsList.filter((obj) => obj.discount === 0);
+        return eventsList.filter((obj) => obj.discount == 0);
       case filterType.DISCOUNT:
         return eventsList.filter((obj) => obj.discount > 0);
       default:
