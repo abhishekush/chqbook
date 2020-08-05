@@ -17,6 +17,7 @@ const useStyles = makeStyles((theme) => ({
   container: {
     display: "flex",
     justifyContent: "center",
+    flexDirection: "column",
   },
   root: {
     width: "100%",
@@ -37,26 +38,26 @@ export default function AlignItemsList(props) {
 
   return (
     <>
-      <ToggleButtonGroup
-        value={filter}
-        onChange={handleFilter}
-        aria-label="text formatting"
-        exclusive
-      >
-        <ToggleButton value={filterType.ALL} aria-label="bold">
-          ALL
-        </ToggleButton>
-        <ToggleButton value={filterType.FREE} aria-label="underlined">
-          FREE
-        </ToggleButton>
-        <ToggleButton value={filterType.DISCOUNT} aria-label="italic">
-          DISCOUNT
-        </ToggleButton>
-        <ToggleButton value={filterType.NO_DISCOUNT} aria-label="underlined">
-          NO DISCOUNT
-        </ToggleButton>
-      </ToggleButtonGroup>
       <div className={classes.container}>
+        <ToggleButtonGroup
+          value={filter}
+          onChange={handleFilter}
+          aria-label="text formatting"
+          exclusive
+        >
+          <ToggleButton value={filterType.ALL} aria-label="bold">
+            ALL
+          </ToggleButton>
+          <ToggleButton value={filterType.FREE} aria-label="underlined">
+            FREE
+          </ToggleButton>
+          <ToggleButton value={filterType.DISCOUNT} aria-label="italic">
+            DISCOUNT
+          </ToggleButton>
+          <ToggleButton value={filterType.NO_DISCOUNT} aria-label="underlined">
+            NO DISCOUNT
+          </ToggleButton>
+        </ToggleButtonGroup>
         <List className={classes.root}>
           {list.map((d, index) => (
             <React.Fragment key={d.eventName + index}>
