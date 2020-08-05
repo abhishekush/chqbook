@@ -33,7 +33,7 @@ const ListItem = (props) => {
     setOpen(!open);
   };
   return (
-    <>
+    <div>
       <MaterialListItem button onClick={handleClick}>
         <>
           <ListItemAvatar>
@@ -53,7 +53,7 @@ const ListItem = (props) => {
           </MaterialListItem>
         </List>
       </Collapse>
-    </>
+    </div>
   );
 };
 

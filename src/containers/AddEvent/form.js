@@ -13,9 +13,9 @@ const useStyles = makeStyles((theme) => ({
   card: {
     maxWidth: 420,
     marginTop: 50,
-    [theme.breakpoints.up("md")]: {
-      marginRight: "10ch",
-    },
+    // [theme.breakpoints.up("md")]: {
+    //   marginRight: "10ch",
+    // },
     [theme.breakpoints.down("sm")]: {
       maxWidth: "80ch",
       marginBottom: 20,
